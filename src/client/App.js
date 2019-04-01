@@ -9,13 +9,36 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <h1>Club one - making your night out work for you!</h1>
+        {/* Make in to component */}
         <nav>
-          <a href="/html/">HTML</a> 
-          <a href="/css/">CSS</a>
-          <a href="/js/">JavaScript</a>
-          <a href="/jquery/">jQuery</a>
+          <h1>Club one - making your night out work for you!</h1>
+          <ul>
+            <li>
+              <a href="#home">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#news">News</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+          </ul>
         </nav>
+
+        {/* Tracks list */}
+        <br />
+        <ul>
+          <li>Track one</li>
+          <li>Track two</li>
+          <li>Track three</li>
+          <li>Track four</li>
+        </ul>
+
       </div>
     );
   }

@@ -1,2 +1,4 @@
 Project info
 https://hackernoon.com/full-stack-web-application-using-react-node-js-express-and-webpack-97dbd5b9d708
+
+Foundation CSS framework: https://foundation.zurb.com/sites/docs/installation.html#command-line-tool.html
