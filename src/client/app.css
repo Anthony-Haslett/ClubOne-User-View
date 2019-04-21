@@ -1,38 +1,85 @@
-h1 {
-  color: black;
-}
+/* Core styling */
 
-nav {
-  display: block;
-}
+/* Color pallete */
+/* White: #F8F8FF */
+/* Black:  #090909*/
 
 body {
-  text-align: center;
-  margin: auto;
+  /* Fonts */
+  font-family: 'Roboto', sans-serif;
+  color: #F8F8FF;
+  background-color: #4a4a4a;
+  display: flex;
+  /* margin-left: auto;
+  margin-right: auto;  */
 }
 
-/* Navagation bar */
-ul {
+/* Heading styling */
+
+.header {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.header-text {
+  justify-content: center;
+}
+
+/* List styling */
+
+.navbar {
+  background-color: #333;
+  color: #090909;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333;
+
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: center;
+  align-content: center;
 }
 
-li {
+.navbar a {
   float: left;
-}
-
-li a {
+  color: #F8F8FF;
   display: block;
-  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 16px;
+
+  margin-left: auto; 
+  margin-right: auto; 
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
+/* Image styling */
+
+#logo {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width:50px;
+  height: auto;
+}
+
+/* Input styling */
+input[type=text]  {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  margin: 25px;
 }

@@ -1,18 +1,26 @@
 import React, { Component } from "react";
-import "./app.css";
-import Foundation from "react-foundation";
-// import ReactImage from './react.png';
+import './app.css';
+import PartyEmoji from './party emoji.png'
+
 export default class App extends Component {
   componentDidMount() {
-    fetch("/api/getUsername").then(res => res.json());
+    fetch('/api/getUsername').then(res => res.json());
   }
 
   render() {
     return (
       <div>
-        <h1>Club one</h1>
+        <section className="header">
+          <h1 className="header-text">Club one</h1>
+        </section>
 
-        {/* Tracks list */}
+        <img src={PartyEmoji} alt="logo" id="logo" />
+
+        <section className="songSearch">
+          <input type="text" name="songSearch" placeholder="Search for a song..." />
+        </section>
+
+        Tracks list (dynamic pull in)
         <br />
         <ul>
           <li>Track one</li>
@@ -25,23 +33,12 @@ export default class App extends Component {
           <br />
         </ul>
 
-        {/* Make in to component */}
-        <nav>
-          <ul>
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#search">Search</a>
-            </li>
-            <li>
-              <a href="#profile-page">Profile page</a>
-            </li>
-            <li>
-              <a href="#activity-feed">Activity feed</a>
-            </li>
-          </ul>
-        </nav>
+        <div className="navbar">
+          <a href="#home" className="active">Home</a>
+          <a href="#news">Profile page</a>
+          <a href="#contact">Activity feed</a>
+        </div>
+
       </div>
     );
   }
